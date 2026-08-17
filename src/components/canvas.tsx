@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-const Canvas: React.FC = (props) => {
+const Canvas: React.FC<React.ComponentProps<'canvas'>> = (props) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [drawing, setDrawing] = useState(false);
 
@@ -50,7 +50,7 @@ const Canvas: React.FC = (props) => {
         setDrawing(false);
     };
 
-    return <canvas ref={canvasRef} onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} onMouseLeave={onMouseUp} {...props} />;
+    return <canvas ref={canvasRef} {...props} onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} onMouseLeave={onMouseUp} />;
 }
 
 export default Canvas;
