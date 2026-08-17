@@ -6,6 +6,7 @@ TBD
 ### Stack
 - Typescript
 - Astro
+- Vanilla CSS
 ## Commands
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
