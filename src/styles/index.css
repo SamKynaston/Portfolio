@@ -14250,8 +14250,13 @@ ol.u-text-max-width,
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
   z-index: 1;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=index.css.map */
