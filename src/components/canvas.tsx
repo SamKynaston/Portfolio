@@ -80,7 +80,7 @@ const Canvas: React.FC<React.ComponentProps<'canvas'>> = (props) => {
         setDrawing(false);
     };
 
-    return <canvas ref={canvasRef} {...props} onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} onMouseLeave={onMouseUp} />;
+    return <canvas ref={canvasRef} {...props} onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} />;
 }
 
 export default Canvas;
