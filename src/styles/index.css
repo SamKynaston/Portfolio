@@ -14236,9 +14236,21 @@ ol.u-text-max-width,
   font-variant-numeric: oldstyle-nums !important;
 }
 
+/* GLOBAL STYLES */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* HERO STYLES */
 .hero {
   min-height: 100svh;
   position: relative;
+  background-image: linear-gradient(to right, #ddd 1px, transparent 1px), linear-gradient(to bottom, #ddd 1px, transparent 1px);
+  background-size: 8rem 8rem;
 }
 
 .doodle-canvas {
@@ -14255,8 +14267,10 @@ ol.u-text-max-width,
   bottom: 2rem;
   display: flex;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
+
+/* BODY STYLES */
 
 /*# sourceMappingURL=index.css.map */
