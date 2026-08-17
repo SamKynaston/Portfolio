@@ -14237,6 +14237,10 @@ ol.u-text-max-width,
 }
 
 /* GLOBAL STYLES */
+body {
+  background-color: #e1e1e1;
+}
+
 html {
   scrollbar-width: none;
 }
@@ -14249,8 +14253,9 @@ html::-webkit-scrollbar {
 .hero {
   min-height: 100svh;
   position: relative;
-  background-image: linear-gradient(to right, #ddd 1px, transparent 1px), linear-gradient(to bottom, #ddd 1px, transparent 1px);
-  background-size: 8rem 8rem;
+  background-image: linear-gradient(to right, #eee 1px, transparent 1px), linear-gradient(to bottom, #eee 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  background-color: #fff;
 }
 
 .doodle-canvas {
