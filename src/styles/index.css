@@ -14277,19 +14277,29 @@ html::-webkit-scrollbar {
   text-align: center;
 }
 
+/* FLEX STYLES */
+.flex {
+  display: flex;
+}
+
+/* BOX STYLES */
+.box {
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 28px;
+}
+
 /* HEADER STYLES */
 .header {
   background-color: #5a5a5a;
   color: #eee;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header-content {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -14328,7 +14338,6 @@ html::-webkit-scrollbar {
 .hero {
   min-height: 100svh;
   position: relative;
-  display: flex;
   flex-direction: column;
 }
 
@@ -14348,7 +14357,6 @@ html::-webkit-scrollbar {
 
 .hero-content {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -14393,7 +14401,7 @@ div .flex-row {
 img.icon {
   width: 196px;
   height: 196px;
-  border-radius: 25%;
+  border-radius: 16px;
 }
 
 /* BODY STYLES */

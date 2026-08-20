@@ -13,10 +13,25 @@ import '../styles/index.css';
 		<title>Astro</title>
 	</head>
 	<body>
-		<section class="hero doodle">
+		<section class="hero flex doodle">
 			<Canvas className="doodle-canvas" client:load/>
 
-			<div class="hero-content bottom center">
+			<div class="hero-content flex left middle align-left">
+				<div class="box flex">
+					<span>
+						<h1>Sam Rhys Kynaston</h1>
+						<p>Full Stack Developer, Software Engineer with experience in <b>Luau</b>, <b>C#</b>, <b>Java</b>, <b>Typescript</b> and <b>Python</b>.</p>
+						<div class="flex-row">
+							<a href="">Github</a>
+							<a href="">LinkedIn</a>
+							<a href="">Email</a>
+						</div>
+					</span>
+					<img src="/ProfileIcon.jpg" class="icon"/>
+				</div>
+			</div>
+
+			<div class="hero-content flex bottom center">
 				<p>
 					Want to see more? Scroll down!
 					<br>
@@ -25,19 +40,8 @@ import '../styles/index.css';
 			</div>
 		</section>
 
-		<section class="hero">
-			<div class="hero-content left middle align-left">
-				<span>
-					<h1>Sam Rhys Kynaston</h1>
-					<p>Full Stack Developer, Software Engineer with experience in <b>Luau</b>, <b>C#</b>, <b>Java</b>, <b>Typescript</b> and <b>Python</b>.</p>
-					<div class="flex-row">
-						<a href="">Github</a>
-						<a href="">LinkedIn</a>
-						<a href="">Email</a>
-					</div>
-				</span>
-				<img src="/ProfileIcon.jpg" class="icon"/>
-			</div>
+		<section class="hero fled">
+			PLACEHOLDER
 		</section>
 	</body>
 </html>
