@@ -14322,10 +14322,9 @@ html::-webkit-scrollbar {
   justify-content: flex-end;
 }
 
-/* Span Styles */
-span .row {
+/* Flex Styles */
+div .flex-row {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
 }
 
