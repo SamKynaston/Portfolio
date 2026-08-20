@@ -19,7 +19,9 @@ html::-webkit-scrollbar {
 .hero {
     min-height: 100svh;
     position: relative;
+}
 
+.hero.doodle {
     background-image:
         linear-gradient(to right, #eee 1px, transparent 1px),
         linear-gradient(to bottom, #eee 1px, transparent 1px);
@@ -37,14 +39,64 @@ html::-webkit-scrollbar {
 
 .hero-content {
     position: absolute;
-    inset-inline: 0;
-    bottom: 2rem;
 
-    display: flex;
-    justify-content: center;
+    top: var(--hero-y);
+    left: var(--hero-x);
+
+    transform: translate(
+        var(--hero-translate-x),
+        var(--hero-translate-y)
+    );
 
     z-index: 2;
     pointer-events: none;
+}
+
+/* Verticle Positioning */
+.hero-content.top {
+    --hero-y: 2rem;
+    --hero-translate-y: 0;
+}
+
+.hero-content.middle {
+    --hero-y: 50%;
+    --hero-translate-y: -50%;
+}
+
+.hero-content.bottom {
+    --hero-y: calc(100% - 2rem);
+    --hero-translate-y: -100%;
+}
+
+/* Middle Postioning */
+.hero-content.left {
+    --hero-x: 2rem;
+    --hero-translate-x: 0;
+}
+
+.hero-content.center {
+    --hero-x: 50%;
+    --hero-translate-x: -50%;
+}
+
+.hero-content.center-25 {
+    --hero-x: 25%;
+    --hero-translate-x: -50%;
+}
+
+.hero-content.center-50 {
+    --hero-x: 50%;
+    --hero-translate-x: -50%;
+}
+
+.hero-content.center-75 {
+    --hero-x: 75%;
+    --hero-translate-x: -50%;
+}
+
+.hero-content.right {
+    --hero-x: calc(100% - 2rem);
+    --hero-translate-x: -100%;
 }
 
 /* BODY STYLES */
