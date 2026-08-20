@@ -14284,9 +14284,11 @@ html::-webkit-scrollbar {
 
 /* BOX STYLES */
 .box {
-  padding: 12px;
-  background-color: #ffffff;
-  border-radius: 28px;
+  padding: 16px;
+  background-color: #f2f2f2;
+  border-radius: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 12px 30px rgba(0, 0, 0, 0.06);
+  gap: 18px;
 }
 
 /* HEADER STYLES */
