@@ -14295,6 +14295,13 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 24px;
 }
 
+/* Image Styles */
+.box img.icon {
+  width: 196px;
+  height: 196px;
+  border-radius: 16px;
+}
+
 /* HEADER STYLES */
 .header {
   background-color: #5a5a5a;
@@ -14401,13 +14408,6 @@ p, h1, h2, h3, h4, h5, h6 {
 div .flex-row {
   display: flex;
   gap: 1rem;
-}
-
-/* Image Styles */
-img.icon {
-  width: 196px;
-  height: 196px;
-  border-radius: 16px;
 }
 
 /* BODY STYLES */
