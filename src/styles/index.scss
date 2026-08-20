@@ -28,6 +28,56 @@ html::-webkit-scrollbar {
     text-align: center;
 }
 
+/* HEADER STYLES */
+.header {
+    background-color: #5a5a5a;
+    color: #eee;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    z-index: 2;
+}
+
+/* Verticle Positioning */
+.header-content.top {
+    margin-top: 2rem;
+}
+
+.header-content.middle {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-content.bottom {
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+/* Middle Postioning */
+.header-content.left {
+    justify-content: flex-start;
+}
+
+.header-content.center {
+    justify-content: center;
+}
+
+.header-content.right {
+    justify-content: flex-end;
+}
+
 /* HERO STYLES */
 .hero {
     min-height: 100svh;
