@@ -14322,6 +14322,13 @@ html::-webkit-scrollbar {
   justify-content: flex-end;
 }
 
+/* Span Styles */
+span .row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 /* Image Styles */
 img.icon {
   width: 128px;
