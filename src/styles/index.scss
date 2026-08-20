@@ -15,6 +15,10 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    color: #282828;
+}
+
 /* Article Styles */
 .article {
     padding: 1rem;
@@ -51,9 +55,9 @@ html::-webkit-scrollbar {
 /* BOX STYLES */
 .box {
     padding: 16px;
-    background-color: #cccccc;
-    color: #282828;
     border-radius: 32px;
+
+    background-color: #ffffff;
 
     box-shadow:
         0 4px 12px rgba(0, 0, 0, 0.08),
@@ -120,10 +124,11 @@ html::-webkit-scrollbar {
 
 .hero.doodle {
     background-image:
-        linear-gradient(to right, #eee 1px, transparent 1px),
-        linear-gradient(to bottom, #eee 1px, transparent 1px);
+        linear-gradient(to right, #dedede 1px, transparent 1px),
+        linear-gradient(to bottom, #dedede 1px, transparent 1px);
+
     background-size: 2rem 2rem;
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 .doodle-canvas {
