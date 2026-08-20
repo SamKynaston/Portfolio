@@ -92,6 +92,13 @@ html::-webkit-scrollbar {
     justify-content: flex-end;
 }
 
+/* Image Styles */
+img.icon {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+}
+
 /* BODY STYLES */
 .body {
 
