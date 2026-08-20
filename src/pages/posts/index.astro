@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Canvas from '../../components/canvas.tsx';
+import '../../styles/index.css';
+
+const posts = (await getCollection('post')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+        <div>
+            {
+                posts.map((post) => (
+                    <a href={`/posts/${post.id}`}>
+                        {post.data.title}
+                    </a>
+                    <br />
+                ))
+            }
+        </div>
+	</body>
+</html>
