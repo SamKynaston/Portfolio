@@ -19,10 +19,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             </div>
         </header>
 
-        {title}
-        {description}
-		{pubDate}
-        {updatedDate}
-        {heroImage}
+        <article class="article">
+            <slot />
+        </article>
 	</body>
 </html>

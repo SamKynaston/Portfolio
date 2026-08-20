@@ -14250,6 +14250,20 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+/* Article Styles */
+.article {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article p {
+  max-width: 75%;
+  margin-inline: auto;
+}
+
 /* Text Styles */
 .align-left {
   text-align: left;
