@@ -14238,7 +14238,7 @@ ol.u-text-max-width,
 
 /* GLOBAL STYLES */
 body {
-  background-color: #e1e1e1;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -14304,7 +14304,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* HEADER STYLES */
 .header {
-  background-color: #5a5a5a;
+  background-color: #eee;
   color: #eee;
   width: 100%;
   justify-content: center;
@@ -14317,6 +14317,11 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 2rem;
   z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 /* Verticle Positioning */
@@ -14357,7 +14362,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .hero.doodle {
   background-image: linear-gradient(to right, #dedede 1px, transparent 1px), linear-gradient(to bottom, #dedede 1px, transparent 1px);
   background-size: 2rem 2rem;
-  background-color: #fafafa;
+  background-color: #eee;
 }
 
 .doodle-canvas {

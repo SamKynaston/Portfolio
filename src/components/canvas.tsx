@@ -68,7 +68,8 @@ const Canvas: React.FC<React.ComponentProps<'canvas'>> = (props) => {
 
         const { x, y } = getPosition(event);
 
-        context.lineWidth = 3;
+        context.strokeStyle = '#444';
+        context.lineWidth = 2;
         context.lineCap = 'round';
         context.lineJoin = 'round';
 
